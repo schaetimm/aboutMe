@@ -73,40 +73,58 @@
                             </div>
                         </form>
 
-                         <nav>
-                            <a target="_blank" class="cobutton" href="https://www.linkedin.com/in/timm-sch%C3%A4cher-5b9762211/">
+                         <ul class="sci">
+                            <li data-text="Linkedin" data-color="#0e76a8">
+                                <a  target="_blank" class="linkedin" href="https://www.linkedin.com/in/timm-sch%C3%A4cher-5b9762211/">
                                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                            </a>
-                                <a target="_blank" class="cobutton" href="https://www.xing.com/profile/Timm_Schaecher3/cv">
+                                </a>
+                            </li>
+                            <li data-text="Xing" data-color="#126567">
+                                <a  target="_blank" class="xing" href="https://www.xing.com/profile/Timm_Schaecher3/cv">
                                     <i class="fa fa-xing" aria-hidden="true"></i>
                                 </a>
-                                     <a target="_blank" class="cobutton" href="https://github.com/schaetimm">
+                            </li>
+                            <li data-text="Github" data-color="#171515" back-color="#cfdc00">
+                                     <a  target="_blank" class="github" href="https://github.com/schaetimm">
                                         <i class="fa fa-github" aria-hidden="true"></i>
-                                         
-                                </a>
-                            </a>
-                        </nav> 
+                                    </a>
+                            </li>
+                        </ul>
+                         
                     </div>
                 </div>
 
-        <!--
-        
-        
-        
-        
-        
-            
-        
-        </a>
-    -->
-        
+      
 
                
     </section>
     
     
-</body>
 
+
+<script src="vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+        max: 30,
+        speed: 400,
+        glare : true,
+        "max-glare": 1, 
+
+    })
+</script>
+<script>
+    let list = document.querySelectorAll('.sci li');
+    let bg = document.querySelector('contactForm');
+    list.forEach(eLements => {
+        eLements.addEventListener('mouseenter', function
+        (event) {
+            let color = event.target.getAttribute
+            ('data-color');
+            bg.style.backgroundColor = color;
+        })
+    })
+</script>
+</body>
 
 
 
