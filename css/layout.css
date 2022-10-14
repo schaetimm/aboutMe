@@ -155,8 +155,14 @@ body{
     font-size: 18px;
     
 }
+nav {
+    bottom: 5px;
+    right: 0;
+}
 nav a{
     display: inline-block;
+    color: #1abc;
+    
     
     
 }
