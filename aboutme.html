@@ -57,27 +57,30 @@
                         </div>
                     </div>
                     <div class="contactForm">
-                        <form>
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            
+                                
                             <h2><br>Send Message</h2>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input id="name" type="name"  required="required">
                                 <span>Full Name</span>
                             </div>
-                            
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input id="email" type="email"  required="required">
                                 <span>Email</span>
+                                
                             </div>
                             <div class="inputBox">
-                                <textarea required="required"></textarea>
+                                <textarea id="message" type="text"  required="required"></textarea>
+                                
                                 <span>Type your Message...</span>
                             </div>
                             <div class="submitBox">
-                                <input type="submit" name="" value="Send">
-
-                                
+                                <input type="submit"  value="Send Email">
                             </div>
                         </form>
+                            
+
 
                          <ul class="sci">
                             <li data-text="Linkedin" data-color="#0e76a8">
@@ -118,17 +121,25 @@
 
     })
 </script>
-<script>
-    let list = document.querySelectorAll('.sci li');
-    let bg = document.querySelector('contactForm');
-    list.forEach(eLements => {
-        eLements.addEventListener('mouseenter', function
-        (event) {
-            let color = event.target.getAttribute
-            ('data-color');
-            bg.style.backgroundColor = color;
-        })
-    })
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script type="text/javascript">
+    function sendEmail() {
+        Email.send({
+            Host : "smtp.strato.de",
+            Username : "info@iefsolutions.de",
+            Password : "ITS250+LO$",
+            // Password : "SFtl23+1#$", 
+            To : 'info@iefsolutions.de',
+            From : document.getElementById("email").value,
+            Subject : "Neue Anfrage",
+            Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email:" + document.getElementById("email").value
+                    + "<br> Message:" + document.getElementById("message").value
+        }).then(
+        message => alert("Message Sent Succesfully")
+        );
+    }
 </script>
 </body>
 
