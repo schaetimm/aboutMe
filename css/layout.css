@@ -252,7 +252,7 @@ nav .start-contact, a:nth-child(3):hover~.animation{
     justify-content: center;
     background: #fff;
     color: #333;
-    border-radius: 10px;
+    border-radius: 20px;
     
     font-size: 4em;
     margin: 20px;
@@ -283,7 +283,7 @@ nav .start-contact, a:nth-child(3):hover~.animation{
 }
 .sci li a:hover .fa{
     color:#fff;
-    transform: scale(1.05) translateZ(20px)
+    transform: scale(1.15) translateZ(20px)
 }
 .sci li a:hover.xing .fa{
     color: #cfdc00;

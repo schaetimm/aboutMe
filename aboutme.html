@@ -79,10 +79,7 @@
                                 <input type="submit"  value="Send Email">
                             </div>
                         </form>
-                            
-
-
-                         <ul class="sci">
+                        <ul class="sci">
                             <li data-text="Linkedin" data-color="#0e76a8">
                                 <a  target="_blank" class="linkedin" href="https://www.linkedin.com/in/timm-sch%C3%A4cher-5b9762211/">
                                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -99,14 +96,19 @@
                                     </a>
                             </li>
                         </ul>
+                            
+
+
+                         
                          
                     </div>
                 </div>
+    </section>
 
       
 
                
-    </section>
+    
     
     
 
@@ -123,13 +125,12 @@
 </script>
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     function sendEmail() {
         Email.send({
-            Host : "smtp.strato.de",
+            Host : "smtp.elasticemail.com",
             Username : "info@iefsolutions.de",
-            Password : "ITS250+LO$",
-            // Password : "SFtl23+1#$", 
+            Password : "SFtl23+1#$", 
             To : 'info@iefsolutions.de',
             From : document.getElementById("email").value,
             Subject : "Neue Anfrage",
@@ -137,10 +138,10 @@
                     + "<br> Email:" + document.getElementById("email").value
                     + "<br> Message:" + document.getElementById("message").value
         }).then(
-        message => alert("Message Sent Succesfully")
+        message => alert("Message Sent Succesfully" + message)
         );
     }
-</script>
+</script> -->
 </body>
 
 
