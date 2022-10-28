@@ -4,20 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css\style.css">
     <link rel="icon" href="icon.jpeg">
     <title>IEF Solution</title>
 </head>
 <body>
-    <header>
-     <nav>
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="/aboutme.html">Contact</a>
+    <div id="start" class="hero">
+     <header>
+       <nav>
+        <a href="/">Welcome</a>
+        <a href="#start">Home</a>
+        <a href="#main">Portfolio</a>
+        <a href="#contact">Contact</a>
         <div class="animation start"></div>
-     </nav>
-    </header>
+       </nav>
+     </header>
+     <div id="home"class="content">
+        <h4>Hello, my name is</h4>
+        <h1>Timm <span>Schächer</span></h1>
+        <h3>I'm a working student in tech field</h3>
+     </div>
+    </div>
+
+    <!-- ABout part-->
+    <section  class="about">
+        <div id="main"  class="main">
+            <img src="/images/zweitesbild.jpeg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span>& working student</span></h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat assumenda pariatur id dolorum nostrum sapiente expedita, mollitia nihil laudantium voluptatem deserunt ex ducimus veritatis, atque necessitatibus cum, illo quidem perspiciatis?</p>
+            </div>
+        </div>
+    </section>
+    <section  class="contact">
+        <div id="contact" class="contact-me">
+            <h2>Contact<span> me</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, cumque. Quo iure doloribus consectetur repudiandae cumque, nisi est, beatae ab inventore quae voluptas ullam odio doloremque recusandae atque laboriosam repellendus.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>  
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Holländische Straße 80, Hinterhaus <br>34127 <br>Kassel</p>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>+49 172/748 81 87</p>
+                            </div>
+                        </div>
+                        
+                    
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>info@iefsolutions.de</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            
+                                
+                            <h2><br>Send Message</h2>
+                            <div class="inputBox">
+                                <input id="name" type="name"  required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input id="email" type="email"  required="required">
+                                <span>Email</span>
+                                
+                            </div>
+                            <div class="inputBox">
+                                <textarea id="message" type="text"  required="required"></textarea>
+                                
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="submitBox">
+                                <input type="submit"  value="Send Email">
+                            </div>
+                        </form>
+                        <ul class="sci">
+                            <li data-text="Linkedin" data-color="#0e76a8">
+                                <a  target="_blank" class="linkedin" href="https://www.linkedin.com/in/timm-sch%C3%A4cher-5b9762211/">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li data-text="Xing" data-color="#126567">
+                                <a  target="_blank" class="xing" href="https://www.xing.com/profile/Timm_Schaecher3/cv">
+                                    <i class="fa fa-xing" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li data-text="Github" data-color="#171515" back-color="#cfdc00">
+                                     <a  target="_blank" class="github" href="https://github.com/schaetimm">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                            
+
+
+                         
+                         
+                    </div>
+                </div>
+    </section>
+    <script src="vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+        max: 30,
+        speed: 400,
+        glare : true,
+        "max-glare": 1, 
+
+    })
+</script>
+
+
     
     
 

@@ -23,14 +23,20 @@
 
 
 
-.content{
-    text-align: center;
+
+.content img{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
 
 }
 .content h1{
     
     font-size: 100px;
     margin: 40px auto 0; 
+    background-color: transparent;
     color: #fff;
     font-weight: 200;
     transition: 0.5s;
@@ -43,23 +49,16 @@
 
 }
 .content a {
-    /* margin: 100px auto 0; 
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-size: 24px;
-    border: 2px solid #fff;
-    
-    border-radius: 50px;
-    */
+   
      
-    margin: 10px auto 0;
+    margin: 10px auto;
     
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80px;
     height: 70px;
+    left: 25px;
     background: #fff;
     border-radius: 50%;
     position: relative;
@@ -80,12 +79,13 @@
 }
 .content p{
     
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     font-weight: 500;
     font-size: 1em;
-    color: #888;
+    color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
+    z-index: 9;
 }
 .content a:hover {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.402);
